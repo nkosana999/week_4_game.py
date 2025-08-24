@@ -18,7 +18,9 @@ def main():
             guess = random.randint(1,n)
 
 
-            if guess_val < guess:
+            if guess_val <= 0:
+                continue
+            elif guess_val < guess:
                 print("Too small!")
                 continue
             elif guess_val > guess:
